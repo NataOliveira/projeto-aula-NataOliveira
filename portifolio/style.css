@@ -1,0 +1,45 @@
+@import url(global.css);
+@import url(nav.css);
+
+
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre {
+    width: 50%;
+    padding: 20px;
+}
+
+ h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(111, 255, 0);
+}
+
+.foto {
+    width: 896px;
+    height: 1195px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.projetos, .habilidades, .sobre {
+   
+    padding: 60px;
+    text-align: center;
+}
+
+.logos {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+.logos img {
+    width: 100px;
+    height: 100px;
+}
