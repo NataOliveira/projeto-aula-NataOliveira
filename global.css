@@ -6,6 +6,27 @@
     list-style: none;
 }
 
+/*Celular*/
+@media (max-width: 450px){
+    .conteiner {
+        flex-direction: column;
+    }
+    .sobre {
+        width: 100%;
+        padding: 20px;
+    }
+    .foto {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px){
+    
+}
+
 html {
     scroll-behavior: smooth;
 }
