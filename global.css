@@ -7,9 +7,9 @@
 }
 
 /*Celular*/
-@media (max-width: 450px){
+@media (max-width: 430px){
     .conteiner {
-        background-color: #ffffff;
+        background-color: #000000;
         flex-direction: column;
     }
     .sobre {
