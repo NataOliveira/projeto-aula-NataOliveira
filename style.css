@@ -20,8 +20,8 @@
 }
 
 .foto {
-    width: 896px;
-    height: 1195px;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto 20px;
 }
