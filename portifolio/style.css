@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+
+.titulo{
+    text-align: center;
+    margin: 20px 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 20px 10%;
+    background: #fff;
+}
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.navbar .menu{
+    display: flex;
+    align-items: center;
+}
+.navbar .menu li{
+    list-style: none;
+    margin-left: 20px;
+}
+.navbar .menu li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar .menu li a:hover{
+    color: #007bff;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+}
+.banner .content{
+    max-width: 500px;
+}
+.banner .content h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+.banner .content p{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+.banner .content a{
+    text-decoration: none;
+    color: #fff;
+    background: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.banner .content a:hover{
+    background: #0056b3;
+}
+.banner .image img{
+    width: 400px;
+    border-radius: 10px;
+}
+.section{
+    padding: 50px 10%;
+}
+.section h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+.section .card{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.section .card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.section .card .info{
+    max-width: 400px;
+}
+.section .card .info h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+.section .card .info p{
+    font-size: 16px;
+    color: #555;
+}
+.section .card .info a{
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    transition: 0.3s;
+}
