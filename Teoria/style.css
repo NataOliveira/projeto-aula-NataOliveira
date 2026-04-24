@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+   
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 20px;
+
+}
+ul li a{
+    text-decoration: none;
+}
