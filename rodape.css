@@ -1,0 +1,57 @@
+.rodape{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 1rem;             
+    padding: 5% 2rem;      
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 22px 2px black;
+}
+
+.rodape a{
+ color: white;
+ text-decoration: none;
+}
+
+.info h2{
+    text-align: left;
+    font-size:1.5rem;
+    background: var(--bg-gradiente);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700; 
+    text-decoration: none;
+}
+.info{
+    text-align: left;
+    font-size:1rem;
+    color: #ffffff;
+    font-weight: 700; 
+    text-decoration: none;
+}
+
+.iconwhats{
+    width: 29px;
+}
+
+.icons{
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+    justify-content: center
+}
+
+.direitos{
+    font-size: 0.8rem;
+    margin-top: 10px;
+    text-align: center;
+    width: 100vw;
+    box-shadow:  0px -1px  rgba(255, 255, 255, 0.11);
+}
+
+
+
+

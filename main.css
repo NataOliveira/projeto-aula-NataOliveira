@@ -1,0 +1,184 @@
+/* ---Sobre --- */
+
+.sectionSobre{
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 8rem auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.tituloSobre{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('imgs/perfil2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.conteinerSobre{
+    width: 100%;
+    margin: 3rem auto;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.63);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.24);
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+.descricaosobre{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.tituloSobre h2 {
+  font-size: 2rem;
+  font-family: var(--font-f);
+  display: inline-block;
+  background: var(--cor-titulo);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.tituloSobre h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background: var(--bg-gradiente);
+}
+.tituloSobre p{
+    color: white;
+    font-size: 1rem;
+    padding-inline: 20%;
+    font-family: var(--font-f);
+    text-align: left;
+}
+
+
+/* ---Habilidades --- */
+
+.sectionHabilidades{
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 8rem auto;
+    padding: 0 20px;
+    text-align: center;
+    
+}
+.tituloHabilidades{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    gap: 2rem;
+}
+
+.conteinerhabilidades{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 5%;
+}
+.tituloHabilidades h2{
+    font-size: 2rem;
+    font-family: var(--font-f);
+    display: inline-block;
+     background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding-bottom: 8px;
+}
+.tituloHabilidades h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background: var(--bg-gradiente);
+}
+
+.tituloHabilidades p{
+    color: white;
+    font-size: 1rem;
+    padding-inline: 20%;
+    font-family: var(--font-f);
+    text-align: center;
+}
+
+/* ---Projetos --- */
+.sectionProjetos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 8rem auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.conteinerprojetos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 5%;
+}
+
+.tituloProjetos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    gap: 2rem;
+}
+
+.tituloProjetos h2{
+    font-size: 2rem;
+    font-family: var(--font-f);
+    display: inline-block;
+    background: var(--cor-titulo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding-bottom: 8px;
+}
+.tituloProjetos h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background: var(--bg-gradiente);
+}
+
+.tituloProjetos p{
+    color: white;
+    font-size: 1rem;
+    font-family: var(--font-f);
+    width: 100%;
+    text-align: center;
+}

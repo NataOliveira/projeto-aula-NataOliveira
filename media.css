@@ -1,0 +1,297 @@
+
+/*Bug Card Dekstop*/
+@media (max-width: 907px) {
+
+
+    .cards{
+        width: 18rem;
+        height: 30rem;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 415px) and (max-width: 768px)  {
+
+  /* --- Hero --- */
+  .headerdiv {
+    width: 90%;
+    }
+     
+    .hero{
+    background-attachment: scroll;
+    }
+
+    .linksnav a {
+     font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 0.9;
+    }
+    
+     .subtitulo{
+        font-size: 2rem;
+    }
+    .tituloSobre{
+        background-attachment: scroll;   
+    }
+
+    .decricao{
+        font-size: 1rem;
+    }
+
+    .bt1{
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+    }
+
+    .bt2{
+         padding: 1rem 2rem;
+        font-size: 0.8rem;
+    }
+
+
+    /* --- Cards Section Sobre --- */
+
+
+  .tituloSobre{
+    display: flex;
+    flex-wrap: wrap;
+
+    }
+
+
+     /* --- Cards Section Projetos --- */
+  
+    .conteinerprojetos {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cards {
+        flex: 1 1 100%;
+        width: 100%;
+        height: auto;
+    }
+   
+     .info h2{
+        font-size: 1rem;
+    }
+
+    .info{
+        font-size: 0.8rem;
+    }
+    
+}
+ /*Mobile*/ 
+@media (max-width: 414px){ 
+   
+    /*---Section Hero---*/
+
+    header{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+  .logoN{
+        display: none;
+    }
+
+    nav{
+        justify-content: center;
+         flex-wrap: wrap;
+    }
+    .linksnav {
+        justify-content: center;
+        font-size: 0.1rem;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+   
+    .linksnav a {
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 0 10px;
+       
+    }
+
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    .subtitulo{
+        font-size: 1.5rem;
+    }
+
+    .decricao{
+        font-size: 0.8rem;
+    }
+
+    .bt1{
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .bt2{
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    /*---Section Sobre---*/
+
+    .sectionSobre{
+        margin: 2rem auto;
+    }
+    .fotoperfil{
+        width: 0;
+    }
+    
+    .tituloSobre p{
+        width: 90%;
+        padding: 0;
+        text-align: center;
+    }
+
+     /*---Section Projetos---*/
+
+     .cards {
+        flex: 1 1 100%;
+        width: 100%;
+        height: auto;
+    }
+    
+    .descricaocard h2 a {
+        font-size: 1.3rem;
+    }
+
+     .fotodiv{
+        background-image: url(imgs/cordel3.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cardsh{
+        width: 8rem;
+        transition: all 1s ease;
+    }
+    .cardsh h2{
+        font-size: 0.8rem;
+    }
+
+    /*---Section footer---*/
+
+    .info h2{
+        font-size: 1rem;
+    }
+
+    .info{
+        font-size: 0.6rem;
+    }
+    
+}
+
+@media (max-width: 240px){
+
+        .linksnav a {
+            font-size: 0.6rem;
+        }
+    
+        h1{
+            font-size: 2.5rem;
+        }
+    
+        .subtitulo{
+            font-size: 1rem;
+        }
+    
+        .decricao{
+            font-size: 0.6rem;
+        }
+    
+        .bt1{
+            padding: 0.5rem 1rem;
+            font-size: 0.6rem;
+        }
+    
+        .bt2{
+            padding: 0.5rem 1rem;
+            font-size: 0.6rem;
+        }
+
+        .descricaosobre h2{
+            font-size: 1rem;
+        }
+        .descricaosobre p {
+            font-size: 0.7rem;
+        }
+
+        .tituloHabilidades h2{
+             font-size: 1rem;
+        }
+         .tituloHabilidades p {
+            font-size: 0.7rem;
+        }
+       
+        .cardsh img{
+            width:2.7rem;
+            height: auto;
+        }
+        .cardsh{
+            width: 6rem;
+            height: 6rem;
+            transition: all 1s ease;
+            padding: 0 0;
+           
+        }
+
+        .cardsh h2 {
+            font-size: 0.8rem;
+            padding-top: 1rem;
+        }
+
+        .tituloProjetos h2{
+            font-size: 1rem;
+        }
+         .tituloProjetos p {
+            font-size: 0.7rem;
+        }
+     
+
+        .cards {
+            flex: 1 1 100%;
+            width: 100%;
+            height: auto;
+            padding: 0;
+        }   
+        
+        .descricaocard h2 {
+            width: 100%;
+            text-align: center;
+    
+        }
+        .descricaocard h2 a {
+            font-size: 1rem;
+            margin: 0;
+            width: 100%;
+        }
+       .descricaocard p{
+            display: none;
+            align-items: center;
+        }
+
+        .descricaocard h2 a::after {
+         width: 90%;
+         left: 5%;
+        }
+
+        .direitos p{
+            font-size: 0.5rem;
+         }
+      
+
+ }
+
