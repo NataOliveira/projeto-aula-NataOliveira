@@ -1,12 +1,37 @@
-:root{
+:root {
+  --bg-color: #000000;
+  --box-color: rgb(51, 51, 51);
+  --font-f: "Poppins", sans-serif;
+  --cor-titulo: #ffffff;
+  --cor-letras: #ffffff;
+  --a-color: #3edd5e;
+  --bg-gradiente2: linear-gradient(135deg, #2c88c4, #45dd3e);
+  --bg-gradiente2i: linear-gradient(135deg, #45dd3e, #2c88c4);
+  --card-text: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.05); 
+  --card-shadow: 6px 6px 25px rgba(0, 0, 0, 0.4);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-bg-hover: rgba(255, 255, 255, 0.09);
+  --card-border-hover: rgba(255, 255, 255, 0.25);
+  --card-hover-shadow: 0px 15px 35px rgba(0, 0, 0, 0.6), 0px 0px 15px rgba(255, 255, 255, 0.05);
+  --btn-tema-bg: #ffffff;
+  --btn-tema-deslocamento: 0rem;
+  
+}
 
---bg-color: #0a0a0f;
---font-f:'Poppins', sans-serif;
---bg-gradiente:#a855f7;
---bg-gradiente2:linear-gradient(90deg, #c026d3, #22d3ee);
---a-color:#a855f7;
---cor-titulo: white;
---shadow-box-cards: 0px 0px 2px 0.1px rgba(255, 254, 254, 0.4);
-
-
+[tema="light"] {
+  --bg-color: #ffffff;
+  --cor-titulo: #121212;
+  --cor-letras: #444444; 
+  --a-color: #2ca846;
+  --card-text: #121212;
+  --card-bg: rgba(0, 0, 0, 0.02);
+  --card-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03);
+  --card-border: rgba(0, 0, 0, 0.06);
+  --card-bg-hover: rgba(255, 255, 255, 0.7);
+  --card-border-hover: rgba(0, 0, 0, 0.12);
+  --card-hover-shadow: 0px 20px 38px rgba(0, 0, 0, 0.08);
+  --btn-tema-bg: #f7f3f3;
+  --btn-tema-deslocamento: 1.55rem;
+  --icon-tema-deslocamento: -1.3rem;
 }

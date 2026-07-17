@@ -1,77 +1,132 @@
-header{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    background: transparent; 
-    align-items: center;
-    justify-content: center;  
-    z-index: 1;
-    align-content: center;
-    background-color: rgba(0, 0, 0, 0.375);
-    box-shadow: 0px 0px 10px 0.5px black;
-    padding: 20px 30px;
-   
-}  
-
-.logoN {
-  width: 50px;
-  height: 50px;
-  background: var(--bg-gradiente2);
-  border-radius: 12px;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #fff;
-  transition: 0.3s;
+  align-items: center;
+  width: 100%;
+  padding-block: 10px;
 }
 
-.logoN:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-    cursor: pointer;
-    
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    max-width: 1100px;
- 
-}
-
-nav li {
-    list-style: none;
-    display: inline-block;
-}
-   
-.linksnav a{
-    color: white;
-    text-decoration: none;
-    margin-left: 40px;
-    font-size: 1rem;
-    transition: 0.3s;
-    position: relative;
-}
-    
-.linksnav a:hover{
-    color: #a855f7;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  max-width: 850px;
+  padding: 10px 24px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
 }
 
-nav a::after {
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 2rem;
+  font-size: 1.5rem; 
+  font-weight: 600;
+  text-decoration: none;
+  font-family: var(--font-f);
+  background: var(--bg-gradiente2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.logo:hover {
+  background: var(--bg-gradiente2i);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.05);
+}
+
+.linksnav {
+  display: flex;
+  gap: 24px;          
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linksnav a {
+  position: relative;
+  color: var(--cor-titulo);
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: var(--font-f);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.linksnav a:hover {
+  color: var(--a-color);
+}
+
+.linksnav a::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   left: 0;
   width: 0;
   height: 2px;
-  background: currentColor; /* usa a cor do próprio link */
+  background: currentColor;
   transition: width 0.3s ease;
 }
 
-nav a:hover::after {
+.linksnav a:hover::after {
   width: 100%;
+}
+
+.divBtnTema {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 3.4rem;
+  height: 1.8rem;
+  padding: 2px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  background: var(--box-color);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.divBtnTema:hover {
+  border-color: var(--card-border-hover);
+}
+
+
+.btnTema {
+  position: absolute;
+  left: 4px;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  background-color: var(--btn-tema-bg);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateX(var(--btn-tema-deslocamento));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+}
+
+.spanBtn {
+  position: absolute;
+  right: 6px;
+  font-size: 0.9rem;
+  color: #fff;
+  user-select: none;
+  pointer-events: none;
+  transition: color 0.3s ease;
+  transform: translateX(var(--icon-tema-deslocamento));
 }

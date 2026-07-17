@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    background: var(--bg-color) ;
+    background: var(--bg-color);
     color: white;
     font-family: var(--font-f);
     overflow-x: hidden;
 }
-
 
 html{
     scroll-behavior:smooth;

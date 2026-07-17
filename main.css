@@ -1,87 +1,110 @@
+
+.titulo-secao {
+    font-size: 2rem;
+    font-family: var(--font-f);
+    display: inline-block;
+    background: var(--cor-titulo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.titulo-secao::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background: var(--bg-gradiente2);
+}
+
 /* ---Sobre --- */
 
 .sectionSobre{
+    scroll-margin-top: 90px;
     display: flex;
     flex-direction: column;
     max-width: 1500px;
-    margin: 8rem auto;
+    margin: auto;
     padding: 0 20px;
     text-align: center;
 }
 
-.tituloSobre{
+.conteinerSobre{
     width: 100%;
     min-height: 40vh;
     display: flex;
     align-items: center;
-    text-align: center; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('imgs/perfil2.png');
-    background-size: cover;
-    background-attachment: fixed;
-    
+    border-radius: 20px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow: hidden; 
 }
 
-.conteinerSobre{
+.foto{
     width: 100%;
-    margin: 3rem auto;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.63);
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.24);
-    flex-wrap: wrap;
-    gap: 2rem;
-    
+    height: 100%;
 }
+
+.foto img{
+    border-radius: 90%;
+    width: 70%;
+    height: auto;
+}
+
 .descricaosobre{
-    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     gap: 3rem;
+    max-width: 50%;
 }
 
-.tituloSobre h2 {
-  font-size: 2rem;
-  font-family: var(--font-f);
-  display: inline-block;
-  background: var(--cor-titulo);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  position: relative;
-  padding-bottom: 8px;
-}
-
-.tituloSobre h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2.5px;
-  background: var(--bg-gradiente);
-}
-.tituloSobre p{
-    color: white;
+.descricaosobre p{
+    color: var(--cor-letras);
     font-size: 1rem;
-    padding-inline: 20%;
+    padding-inline: 10%;
     font-family: var(--font-f);
     text-align: left;
 }
 
 
+.foto, .descricaosobre{
+    opacity: 0;
+    transition: transform 1.2s ease-out, opacity 1.2s ease-out; 
+}
+
+.foto{
+    transform: translateX(-100px); 
+}
+
+.descricaosobre{
+    transform: translateX(100px);
+}
+
+.conteinerSobre.visivel .foto,
+.conteinerSobre.visivel .descricaosobre {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* ---Habilidades --- */
 
 .sectionHabilidades{
+    scroll-margin-top: 90px;
     display: flex;
     flex-direction: column;
     max-width: 1500px;
     margin: 8rem auto;
     padding: 0 20px;
     text-align: center;
-    
 }
+
 .tituloHabilidades{
     display: flex;
     align-items: center;
@@ -92,31 +115,12 @@
 
 .conteinerhabilidades{
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
     background-color: transparent;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 5%;
-}
-.tituloHabilidades h2{
-    font-size: 2rem;
-    font-family: var(--font-f);
-    display: inline-block;
-     background: white;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    position: relative;
-    padding-bottom: 8px;
-}
-.tituloHabilidades h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2.5px;
-  background: var(--bg-gradiente);
 }
 
 .tituloHabilidades p{
@@ -128,7 +132,9 @@
 }
 
 /* ---Projetos --- */
+
 .sectionProjetos{
+    scroll-margin-top: 90px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -152,27 +158,6 @@
     flex-direction: column;
     text-align: center; 
     gap: 2rem;
-}
-
-.tituloProjetos h2{
-    font-size: 2rem;
-    font-family: var(--font-f);
-    display: inline-block;
-    background: var(--cor-titulo);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    position: relative;
-    padding-bottom: 8px;
-}
-.tituloProjetos h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2.5px;
-    background: var(--bg-gradiente);
 }
 
 .tituloProjetos p{
